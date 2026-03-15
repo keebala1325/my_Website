@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id ="output"></p>
+    <h1>Hello, World</h1>
+    <p id ="p1"></p>
+    <p id ="p2"></p>
+    <p id ="p3"></p>
+    <p id ="p4"></p>
+    <p id ="p5"></p>
+    <p id ="p6"></p>
+    <p id ="p7"></p>
+    <p id ="p8"></p>
+    <p id ="p9"></p>
+    <h1 id ="h1"></h1>
+    <h2 id ="h2"></h2>
+
+   
+
+        <script>
+           let a =10;
+           let b = 20;
+
+           document.getElementById("output").innerHTML = a+b; //30
+           //document.getElementById("output").color = red;
+           document.getElementById("p4").innerHTML = a>b; //false
+
+
+           let c =10;
+           let d = '10';
+           //strict equality operator, checks value and type
+           document.getElementById("p5").innerHTML = c==d; //true
+           //strict equality operator, checks value and type
+           document.getElementById("p6").innerHTML = c===d; //false
+
+
+           document.getElementById("p7").innerHTML = (a>b)&&(c>d); //false
+           document.getElementById("p8").innerHTML = (a<b)||(c>d); //true
+
+             document.getElementById("p9").innerHTML = a+=b; //a =a+b; //30
+        </script>
+</body>
+</html>
+

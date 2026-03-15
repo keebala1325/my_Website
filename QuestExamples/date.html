@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <script>
+          let d = new Date();
+          document.getElementById("p1").innerHTML = d;
+          document.getElementById("demo").innerHTML = "date : " +d.getDate();
+          document.getElementById("demo1").innerHTML = "day : " +d.getDay();
+          document.getElementById("demo2").innerHTML = "full year : " + d.getFullYear();
+          document.getElementById("demo3").innerHTML = "hour :  " + d.getHours();
+          document.getElementById("demo4").innerHTML = "milliseconds : " +d.getMilliseconds();
+          document.getElementById("demo5").innerHTML = "seconds : " + d.getSeconds();
+          document.getElementById("demo6").innerHTML =" minutes : " + d.getMinutes();
+          document.getElementById("demo7").innerHTML = "time : " + d.getTime();
+          document.getElementById("demo8").innerHTML = "month : " + d.getMonth();
+
+          let d1 = new Date();
+          d1.setDate(29);
+          d1.setHours(10);
+          d1.setMinutes(55);
+          d1.setSeconds(34);
+          d1.setFullYear(2020);
+          d1.setMonth(9);
+          d1.setMilliseconds(1200);
+          document.getElementById("p2").innerHTML = d1;
+          document.getElementById("p3").innerHTML = d1.getDate() + "/" +(d1.getMonth()+1) +"/"+d1.getFullYear()+" " 
+          +d1.getHours() + " : " + d1.getMinutes() + ":" + d1.getSeconds()+" : " + d1.getMilliseconds();
+
+          // arrays in javascript
+
+          let arr = [1,2,3,4,5];
+          let arr2 = new Array(6,7,8,9,10);
+          let arr3 = ["Hello","world","javascript"];
+          let arr4 = ["Hello",1,2,4,true];
+          document.getElementById("demo").innerHTML = arr + "<br>" +arr2;
+          document.getElementById("demo1").innerHTML = arr3;
+          document.getElementById("demo2").innerHTML = arr4;
+
+           document.getElementById("demo3").innerHTML = "Length of arr is : " +arr.length;
+
+    </script>
+
+
+    </body>
+</html>

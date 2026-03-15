@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id = "p1"></p>
+      <p id = "p2"></p>
+<script>
+    try
+    {
+        let a =20;
+        let c= a +b;
+         document.getElementById("p1").innerHTML = c;
+
+    }
+
+    catch(err)
+    {
+ document.getElementById("p1").innerHTML = "error:"+err;
+    }
+
+    finally
+    {
+         document.getElementById("p2").innerHTML = "Finally block executed";
+    }
+</script>
+
+</body>
+</html>
