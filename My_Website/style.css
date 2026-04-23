@@ -1,0 +1,37 @@
+body {
+  padding-top: 70px;
+}
+
+.navbar
+{
+    background-color:#af1b3f !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+footer {
+  background-color: #af1b3f !important;
+  color: #ffffff !important;
+}
+
+.logo
+{
+    height:100px;
+    width:auto;
+}
+
+body {
+    padding-top: 90px;
+}
+
+.card-img-top {
+    height: 250px;        
+    object-fit: cover;    
+}
+
+ .custom-btn
+{
+    background-color: #7FB77E ;
+}

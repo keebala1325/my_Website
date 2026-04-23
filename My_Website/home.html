@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+
+  <!-- Bootstrap CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html"> <img src="log.png.png" class="logo" alt="Logo">
+         
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4"> Authentic Kerala Recipes</h2>
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="FishCurry.jpg" class="card-img-top" alt="Kerala Fish Curry">
+        <div class="card-body">
+          <h5 class="card-title">Kerala Fish Curry</h5>
+          <p class="card-text">A spicy and tangy fish curry cooked in coconut milk and raw mangoes.</p>
+          <a href="#" class="btn custom-btn">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="Appam & Potato Stew.jpg" class="card-img-top" alt="Appam and Stew">
+        <div class="card-body">
+          <h5 class="card-title">Appam & Stew</h5>
+          <p class="card-text">Soft lacy rice hoppers served with a mild and creamy coconut vegetable stew.</p>
+          <a href="#" class="btn custom-btn">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="BeefFry.jpg"  class="card-img-top" alt="Beef Ularthiyathu">
+        <div class="card-body">
+          <h5 class="card-title">Beef Ularthiyathu</h5>
+          <p class="card-text">Slow cooked spiced beef dry roast with coconut pieces and fresh curry leaves.</p>
+          <a href="#" class="btn custom-btn">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="puttu.jpeg" class="card-img-top" alt="Puttu and Kadala">
+        <div class="card-body">
+          <h5 class="card-title">Puttu & Kadala Curry</h5>
+          <p class="card-text">Steamed rice cylinders served with a rich and spicy black chickpea curry.</p>
+          <a href="#" class="btn custom-btn">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="Prawns.jpg" class="card-img-top" alt="Prawn Moilee">
+        <div class="card-body">
+          <h5 class="card-title">Kerala Prawn Moilee</h5>
+          <p class="card-text">Juicy prawns cooked in a light golden coconut milk gravy with green chilies.</p>
+          <a href="#" class="btn custom-btn">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="Paal Payasam.jpg" class="card-img-top" alt="Payasam">
+        <div class="card-body">
+          <h5 class="card-title">Payasam</h5>
+          <p class="card-text">A traditional Kerala sweet dessert made with rice, milk, and golden jaggery.</p>
+          <a href="#" class="btn custom-btn">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+ <div class="text-center my-4">
+  <button class="btn custom-btn btn-lg" onclick="goToPage('about.html')">
+    Know More About Us
+  </button>
+</div>
+
+
+ <footer class="text-white text-center py-3 mt-5">
+    <p>&copy; <span id="year"></span> MyWebsite. All rights reserved.</p>
+    <p>
+      <a href="home.html" class="text-white me-3">Home</a>
+      <a href="about.html" class="text-white me-3">About</a>
+      <a href="contact.html" class="text-white">Contact</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function goToPage(page) 
+    {
+      window.location.href = page;
+    }
+  </script>
+
+
+</body>
+</html>

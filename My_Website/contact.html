@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+
+  <!-- Bootstrap CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR  -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html"> <img src="log.png.png" class="logo" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- PAGE CONTENT -->
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Contact Us 📍</h2>
+    <div class="row">
+
+      <!-- LEFT COLUMN - Contact Details -->
+      <div class="col-md-6">
+        <h4>Get In Touch</h4>
+        <hr>
+        <p>📍 <strong>Address:</strong> Kerala Kitchen, MG Road, Kochi, Kerala, India</p>
+        <p>📧 <strong>Email:</strong> info@keralakitchen.com</p>
+        <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+        <p>🕐 <strong>Open:</strong> Monday to Saturday, 9am - 6pm</p>
+      </div>
+
+       <!-- RIGHT COLUMN - Google Maps -->
+      <div class="col-md-6">
+        <h4>Find Us Here</h4>
+        <hr>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3!2d76.2673!3d9.9312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnNTIuMyJOIDc2wrAxNic0Mi4zIkU!5e0!3m2!1sen!2sin!4v1"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer class="text-white text-center py-3 mt-5">
+    <p>&copy; <span id="year"></span> Kerala Kitchen. All rights reserved.</p>
+    <p>
+      <a href="home.html" class="text-white me-3">Home</a>
+      <a href="about.html" class="text-white me-3">About</a>
+      <a href="contact.html" class="text-white">Contact</a>
+    </p>
+  </footer>
+  <!-- Bootstrap JS (needed for dropdowns, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+ 
+
+</body>
+</html>
